@@ -4,24 +4,10 @@
     <base target="_self">
 	<script type="text/javascript"> 
 //<![CDATA[
-function calcHeight(){
- //find the height of the internal page
-
- var the_height=
- document.getElementById('the_iframe').contentWindow.
- document.body.scrollHeight;
-
- //change the height of the iframe
- document.getElementById('the_iframe').height=
- the_height;
-
- //document.getElementById('the_iframe').scrolling = "no";
- document.getElementById('the_iframe').style.overflow = "hidden";
-}
 //
 </script>
   </head>
   <body>
-     <iframe src="https://script.google.com/macros/s/AKfycbwHnKfFEEDYUd1TtHSmJYkximrJJ2YKvX6lSzJON4uXLSd4aqM/exec" id="the_iframe" onload="calcHeight();" name="WrittenPublic" title="게시판뷰" frameborder="0" scrolling="no" style="overflow-x:hidden; overflow:auto; width:100%; min-height:500px;"></iframe>
+     <iframe src="https://script.google.com/macros/s/AKfycbwHnKfFEEDYUd1TtHSmJYkximrJJ2YKvX6lSzJON4uXLSd4aqM/exec" id="the_iframe" frameborder="0" onload=”this.style.height=(this.contentWindow.document.body.scrollHeight+30)+’px’;”></iframe>
   </body>
 </html>
