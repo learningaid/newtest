@@ -9,7 +9,6 @@
 </script>
   </head>
   <body>
-     <iframe src="https://script.google.com/macros/s/AKfycbwHnKfFEEDYUd1TtHSmJYkximrJJ2YKvX6lSzJON4uXLSd4aqM/exec" 
-	  style="display:block; width:100vw; height: 100vh"></iframe>
+	  <iframe id="i" src="https://script.google.com/macros/s/AKfycbwHnKfFEEDYUd1TtHSmJYkximrJJ2YKvX6lSzJON4uXLSd4aqM/exec" style="width:100%;border:none;"></iframe><script>window.onmessage=e=>{e.data.hasOwnProperty("frameHeight")&&(document.getElementById("i").style.height=`${e.data.frameHeight+30}px`)}</script>
   </body>
 </html>
